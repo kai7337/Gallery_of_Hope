@@ -70,7 +70,7 @@ export default function App() {
   return (
     <Container className="App">
       <div class="titleHeight">
-        <a href="www.galohope.org">
+        <a href="https://www.galohope.org/">
           <img
             className="logo"
             src="https://cdn.discordapp.com/attachments/701196516680794114/759255160794644490/unknown.png"
