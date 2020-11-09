@@ -86,6 +86,9 @@ export default function App() {
           <Button className="b1" onClick={() => setCategory("Info")}>
             INFO
           </Button>
+          <Button className="b1" onClick={() => setCategory("Songs")}>
+            VIDEOS
+          </Button>
           <Button className="b1" onClick={() => setCategory("")}>
             ALL
           </Button>
