@@ -78,22 +78,20 @@ export default function App() {
           />
         </a>
       </div>
-      <ButtonGroup className="Buttons">
-        <div className="top-right">
-          <Button className="b1" onClick={() => setCategory("Art")}>
-            ART WORKS
-          </Button>
-          <Button className="b1" onClick={() => setCategory("Info")}>
-            INFO
-          </Button>
-          <Button className="b1" onClick={() => setCategory("Songs")}>
-            VIDEOS
-          </Button>
-          <Button className="b1" onClick={() => setCategory("")}>
-            ALL
-          </Button>
-        </div>
-      </ButtonGroup>
+      <div className="top-right">
+        <Button className="b1" onClick={() => setCategory("Art")}>
+          ART WORKS
+        </Button>
+        <Button className="b1" onClick={() => setCategory("Info")}>
+          INFO
+        </Button>
+        <Button className="b1" onClick={() => setCategory("Songs")}>
+          VIDEOS
+        </Button>
+        <Button className="b1" onClick={() => setCategory("")}>
+          ALL
+        </Button>
+      </div>
       {posts.map((post) => (
         <Post post={post} key={post.id} />
       ))}
