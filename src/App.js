@@ -91,6 +91,9 @@ export default function App() {
         <Button className="b1" onClick={() => setCategory("")}>
           ALL
         </Button>
+        <Button className="b1" onclick={() => setCategory("Help")}>
+          HELP
+        </Button>
       </div>
       {posts.map((post) => (
         <Post post={post} key={post.id} />
