@@ -44,10 +44,13 @@
 .prevNexta:hover {
   background-color: black !important;
 }
+
 .top-right {
-  display: flex !important;
-  justify-content: right !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
 .mb-5 {
   display: flex !important;
   justify-content: center !important;
@@ -69,6 +72,10 @@
   border: 0px !important;
 }
 
+.buttons {
+  display: flex !important;
+  justify-content: right !important;
+}
 .b1 {
   font-family: "Barlow", sans-serif !important;
   margin: 3px;

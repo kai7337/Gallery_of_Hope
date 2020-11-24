@@ -3,7 +3,7 @@ import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "easymde/dist/easymde.min.css";
 import { firestore } from "./utils/database";
-import { Container, Button, Card } from "react-bootstrap";
+import { Container, Button, Card, ButtonGroup } from "react-bootstrap";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 
@@ -78,23 +78,22 @@ export default function App() {
           />
         </a>
       </div>
-      <div className="top-right">
-        <Button className="b1" onClick={() => setCategory("")}>
-          ALL
-        </Button>
-        <Button className="b1" onClick={() => setCategory("Art")}>
-          ART WORKS
-        </Button>
-        <Button className="b1" onClick={() => setCategory("Info")}>
-          INFO
-        </Button>
-        <Button className="b1" onClick={() => setCategory("Songs")}>
-          VIDEOS
-        </Button>
-        <Button className="b1" onclick={() => setCategory("Help")}>
-          HELP
-        </Button>
-      </div>
+      <ButtonGroup className="buttons">
+        <div className="top-right">
+          <Button className="b1" onClick={() => setCategory("")}>
+            ALL
+          </Button>
+          <Button className="b1" onClick={() => setCategory("Art")}>
+            ART WORKS
+          </Button>
+          <Button className="b1" onClick={() => setCategory("Info")}>
+            INFO
+          </Button>
+          <Button className="b1" onClick={() => setCategory("Songs")}>
+            VIDEOS
+          </Button>
+        </div>
+      </ButtonGroup>
       {posts.map((post) => (
         <Post post={post} key={post.id} />
       ))}
