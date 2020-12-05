@@ -90,7 +90,7 @@ export default function App() {
             INFO
           </Button>
           <Button className="b1" onClick={() => setCategory("Songs")}>
-            VIDEOS
+            SONGS
           </Button>
         </div>
       </ButtonGroup>
