@@ -123,7 +123,12 @@ function Post({ post }) {
     <Card className="mb-5">
       <Card.Body className="post-body">
         <Card.Text>
-          <ReactMarkdown source={text} renderers={{ code: CodeBlock }} />
+          <ReactMarkdown
+            source={text}
+            renderers={{ code: CodeBlock }}
+            skipHtml={false}
+            allowDangerousHtml
+          />
         </Card.Text>
       </Card.Body>
       <Card.Footer
