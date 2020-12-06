@@ -80,9 +80,6 @@ export default function App() {
       </div>
       <ButtonGroup className="buttons">
         <div className="top-right">
-          <Button className="b1" onClick={() => setCategory("")}>
-            ALL
-          </Button>
           <Button className="b1" onClick={() => setCategory("Art")}>
             ART WORKS
           </Button>
@@ -91,6 +88,9 @@ export default function App() {
           </Button>
           <Button className="b1" onClick={() => setCategory("Songs")}>
             SONGS
+          </Button>
+          <Button className="b1" onClick={() => setCategory("")}>
+            ALL
           </Button>
         </div>
       </ButtonGroup>
